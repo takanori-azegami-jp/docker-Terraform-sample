@@ -13,14 +13,19 @@ Docker で Terraform を使うサンプル
 ```bash
 # dockerイメージ作成
 $ docker build -t debian-terraform .
+
 # dockerコンテナ作成
 $ docker-compose up -d
+
 # dockerコンテナに入る
 $ docker exec -it terraform_container bash
+
 # terraform初期化
 terraform# terraform init
+
 # 実行結果を事前確認
 terraform# terraform plan
+
 # Terraformでファイルを作成する
 terraform# terraform apply
 : yes
