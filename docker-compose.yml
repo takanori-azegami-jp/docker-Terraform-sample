@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  web_container:
+    image: debian-terraform
+    restart: always
+    container_name: terraform_container
+    volumes:
+      - ./terraform:/terraform
+    working_dir: /terraform
+    tty: true
